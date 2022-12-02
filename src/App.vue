@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderComp/>
+    <HeaderComp :info="headerLinks"/>
     
   </div>
 </template>
@@ -13,6 +13,33 @@ export default {
   name: 'App',
   components: {
     HeaderComp
+  },
+
+  data(){
+    return{
+      headerLinks:[
+        {
+          name: 'HOME',
+          href: '#'
+        },
+        {
+          name: 'ABOUT',
+          href: '#'
+        },
+        {
+          name: 'PROJECTS',
+          href: '#'
+        },
+        {
+          name: 'PROCESS',
+          href: '#'
+        },
+        {
+          name: 'TESTIMONIALS',
+          href: '#'
+        },
+      ]
+    }
   }
 }
 </script>

@@ -191,7 +191,7 @@
                     font-size: 0.9rem;
                 }
 
-            .intro-btn-2{
+                .intro-btn-2{
                     border: 2px solid #058283;
                     font-size: 0.9rem;
                 }

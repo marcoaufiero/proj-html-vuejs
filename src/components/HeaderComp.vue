@@ -30,6 +30,7 @@
         
         <div class="hero">
             <div class="container-60">
+                
                 <nav>
                     <div>
                         <span class="title-1">N E X</span>
@@ -38,11 +39,31 @@
                     <ul>
                         <li v-for="(elem, index) in info" :key="index"><a :href="elem.href">{{elem.name}}</a></li>
                         <li><a href="#"><font-awesome-icon icon="fa-regular fa-user" /></a></li>
-                        <li class="nav-btn"><a href="#">GET IN TOUCH</a></li>
+                        <li class="btn nav-btn"><a href="#">GET IN TOUCH</a></li>
                     </ul>
                 </nav>
+            
+                <div class="intro">
+                    <h4>HUMAN RESOURCES</h4>
+                    <div id="title">
+                        <h1>Get More</h1>
+                        <h1>Productivity</h1>
+                        <div class="blue-bg"></div>
+                    </div>
+                    <span class="intro-info">
+                        Planning, recruitment and selection process and performance evaluation of employees.
+                    </span>
+                    <div class="intro-btn">
+                        <div class="btn intro-btn-1">GET IN TOUCH</div>
+                        <div class="btn intro-btn-2">READ MORE</div>
+                    </div>
+                    
+                </div>
+            
             </div>
         </div>
+
+        
         
     </header>
 </template>
@@ -58,6 +79,7 @@
 </script>
 
 <style lang="scss" scoped>
+    
     .banner{
         background-color: #21333E;
         padding: 10px 0;
@@ -77,7 +99,6 @@
 
     .hero{
         position: relative; 
-        height: 850px;
         width: 100%;
 
         ::after{
@@ -85,13 +106,13 @@
             background-image: url(../assets/img/bg-4.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            filter: brightness(0.7);
+            filter: brightness(0.6);
             position: absolute;
             top: 0px;
             right: 0px;
             bottom: 0px;
             left: 0px;
-            z-index: -1;
+            z-index: -2;
         }
 
         nav{
@@ -125,8 +146,6 @@
 
                 .nav-btn{
                     background-color: #058283;
-                    padding: 15px 30px;
-                    border-radius: 5px;
                 }
             
 
@@ -142,13 +161,56 @@
                 }
             }
         }
+
+        .intro{
+            
+            padding: 150px 0 250px 0;
+            width: 50%;
+
+            h4{
+                color: #00A7A6;
+            }
+
+            #title{
+                font-size: 2rem;
+                color: white;
+                margin: 20px 0;
+            }
+
+            .intro-info{
+                font-size: 1.5rem;
+                color: rgb(176, 176, 176);
+            }
+            
+            .intro-btn{
+                margin-top: 30px;
+
+                .intro-btn-1{
+                    background-color: #058283;
+                    margin-right: 20px;
+                    font-size: 0.9rem;
+                }
+
+            .intro-btn-2{
+                    border: 2px solid #058283;
+                    font-size: 0.9rem;
+                }
+            }  
+        }
     }
 
-    
+    .btn{
+        padding: 15px 30px;
+        border-radius: 5px;
+        display: inline-block;
+        color: white;
+    }
 
     .container-60{
         width: 60%;
         margin-inline: auto;
     }
+
+    
 
 </style>

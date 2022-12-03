@@ -88,7 +88,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 20px;
+                gap: 30px;
                 margin-top: 50px;
 
                 .card{

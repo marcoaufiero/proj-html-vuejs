@@ -3,6 +3,7 @@
         <ToolSection/>
         <NetworkSection/>
         <ProjectSection :cards="cards"/>
+        <ManagementSection/>
     </div>
 </template>
 
@@ -11,13 +12,15 @@
 import ToolSection from './ToolSection.vue'
 import NetworkSection from './NetworkSection.vue'
 import ProjectSection from './ProjectSection.vue'
+import ManagementSection from './ManagementSection.vue'
 
     export default {
         name: 'MainComp',
         components: {
             ToolSection,
             NetworkSection,
-            ProjectSection
+            ProjectSection,
+            ManagementSection
         },
         props:{
             cards: Array,

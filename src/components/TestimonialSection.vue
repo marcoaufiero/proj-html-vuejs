@@ -51,7 +51,7 @@
             margin-bottom: 50px;
 
             h5{
-            color: #00A7A6;
+                color: #00A7A6;
             }
 
             .title{

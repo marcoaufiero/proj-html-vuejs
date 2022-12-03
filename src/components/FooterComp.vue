@@ -2,6 +2,7 @@
     <footer>
         <div class="footer-top">
             <div class="container-1">
+                
                 <div class="left-section">
                     <h5>SEND MESSAGE</h5>
                     <div class="title">
@@ -27,7 +28,34 @@
                 </div>
                 
                 <div class="right-section">
-
+                    <h2>Example Inc.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Praesent diam Iacus, dapibus sed imperdiet consectetur.</p>
+                    <div>
+                        <div class="i-block">
+                            <div class="img-box"><font-awesome-icon icon="fa-solid fa-phone" /></div>
+                        </div>
+                        <div class="i-block">
+                            <span>+1 (305) 1234-5678</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="i-block">
+                            <div class="img-box"><font-awesome-icon icon="fa-solid fa-envelope" /></div>
+                        </div>
+                        <div class="i-block">
+                            <span>hello@example.com</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="i-block">
+                            <div class="img-box"><font-awesome-icon icon="fa-solid fa-location-dot" /></div>
+                        </div>
+                        <div class="i-block">
+                            <span>Main Avenue, 987</span>
+                        </div>
+                    </div>
+                    <div class="btn">VIEW MAP</div>
                 </div>
             </div>
         </div>
@@ -78,7 +106,7 @@
                 }
 
                 p{
-                    color: white;
+                    color: rgb(158, 158, 158);
                 }
 
                 form{
@@ -116,12 +144,57 @@
                         border-radius: 3px;
                         padding: 10px 15px;
                     }
-                }
-                
+                }  
             }
 
             .right-section{
                 width: 40%;
+                padding-left: 70px;
+
+                >*{
+                    margin-bottom: 30px;
+                }
+
+                h2{
+                    color: white
+                }
+
+                p{
+                    color: rgb(158, 158, 158);
+                    font-size: 1.1rem;
+                    line-height: 1.5rem;
+                }
+                
+                .i-block{
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                .img-box{
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #0F2128;
+                    border-radius: 50%;
+                    color: #058283;
+                    font-size: 1.4rem;
+                }
+
+                span{
+                    color: #058283;
+                    font-size: 1.1rem;
+                    margin-left: 10px;
+                }
+
+                .btn{
+                    border: 1px solid #00A7A6;
+                    padding: 10px 20px;
+                    color: white;
+                    border-radius: 3px;
+                    display: inline-block;
+                }
             }
         
         }

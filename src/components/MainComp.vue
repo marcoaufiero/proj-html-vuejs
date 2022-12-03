@@ -2,6 +2,7 @@
     <div>
         <ToolSection/>
         <NetworkSection/>
+        <ProjectSection :cards="cards"/>
     </div>
 </template>
 
@@ -9,12 +10,17 @@
 
 import ToolSection from './ToolSection.vue'
 import NetworkSection from './NetworkSection.vue'
+import ProjectSection from './ProjectSection.vue'
 
     export default {
         name: 'MainComp',
         components: {
             ToolSection,
-            NetworkSection
+            NetworkSection,
+            ProjectSection
+        },
+        props:{
+            cards: Array,
         }
     }
 </script>

@@ -54,8 +54,8 @@
                         Planning, recruitment and selection process and performance evaluation of employees.
                     </span>
                     <div class="intro-btn">
-                        <div class="btn intro-btn-1">GET IN TOUCH</div>
-                        <div class="btn intro-btn-2">READ MORE</div>
+                        <a href="#"><div class="btn intro-btn-1">GET IN TOUCH</div></a>
+                        <a href="#"><div class="btn intro-btn-2">READ MORE</div></a>
                     </div>
                     
                 </div>

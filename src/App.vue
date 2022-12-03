@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HeaderComp :info="headerLinks"/>
-    <MainComp/>
+    <MainComp :cards="cardsInfo"/>
     
   </div>
 </template>
@@ -41,7 +41,36 @@ export default {
           name: 'TESTIMONIALS',
           href: '#'
         },
+      ],
+
+      cardsInfo:[
+        {
+          imgPath: 'project-1.jpg',
+          text: 'Academic professional program in social media'
+        },
+        {
+          imgPath: 'project-2.jpg',
+          text: "President's speech at the annual meeting"
+        },
+        {
+          imgPath: 'project-3.jpg',
+          text: 'International business trip in Shangai'
+        },
+        {
+          imgPath: 'project-4.jpg',
+          text: 'Technology workshop with education theme'
+        },
+        {
+          imgPath: 'project-5.jpg',
+          text: 'Donation of chlothes on foot to the partner NGO'
+        },
+        {
+          imgPath: 'project-6.jpg',
+          text: 'Confratenization of the procurement team'
+        }
+
       ]
+
     }
   }
 }

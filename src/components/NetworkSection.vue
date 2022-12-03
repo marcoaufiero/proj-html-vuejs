@@ -46,8 +46,8 @@
                     </div>
                 </div>
                 <div class="btn-box">
-                    <div class="btn btn-1">GET IN TOUCH</div>
-                    <div class="btn btn-2">READ MORE</div>
+                    <a href="#"><div class="btn btn-1">GET IN TOUCH</div></a>
+                    <a href="#"><div class="btn btn-2">READ MORE</div></a>
                 </div>
                 
                 

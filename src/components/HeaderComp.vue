@@ -211,8 +211,6 @@
                         background-color: #078f8f;
                     }
                 }
-
-                
             }  
         }
     }

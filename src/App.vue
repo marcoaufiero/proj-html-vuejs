@@ -48,27 +48,33 @@ export default {
       cardsInfo:[
         {
           imgPath: 'project-1.jpg',
-          text: 'Academic professional program in social media'
+          text: 'Academic professional program in social media',
+          category: 'social'
         },
         {
           imgPath: 'project-2.jpg',
-          text: "President's speech at the annual meeting"
+          text: "President's speech at the annual meeting",
+          category: 'institutional'
         },
         {
           imgPath: 'project-3.jpg',
-          text: 'International business trip in Shangai'
+          text: 'International business trip in Shangai',
+          category: 'events'
         },
         {
           imgPath: 'project-4.jpg',
-          text: 'Technology workshop with education theme'
+          text: 'Technology workshop with education theme',
+          category: 'technology'
         },
         {
           imgPath: 'project-5.jpg',
-          text: 'Donation of chlothes on foot to the partner NGO'
+          text: 'Donation of chlothes on foot to the partner NGO',
+          category: 'events'
         },
         {
           imgPath: 'project-6.jpg',
-          text: 'Confratenization of the procurement team'
+          text: 'Confratenization of the procurement team',
+          category: 'institutional'
         }
 
       ]

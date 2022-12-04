@@ -7,16 +7,13 @@
                 <span class="title-2">Projects</span>
             </div>
             <ul>
-                <li>ALL</li>
-                <li>INSTITUTIONAL</li>
-                <li>SOCIAL</li>
-                <li>EVENTS</li>
-                <li>INNOVATION</li>
-                <li>ENVIRORMENT</li>
-                <li>TECHNOLOGY</li>
+                <li v-for="(elem, index) in projectsList" :key="index" @click="filterCards(elem)" :class="(activeFilter == elem) ? 'active' : ''">{{elem.toUpperCase()}}</li>
             </ul>
             <div class="card-box">
-                <div class="card" v-for="(elem, index) in cards" :key="index">
+                <div class="alert-box" v-if="this.filteredArray == ''">
+                    <span>No projects found in this section.</span>
+                </div>
+                <div class="card" v-for="(elem, index) in filteredArray" :key="index">
                     <img :src="require(`../assets/img/${elem.imgPath}`)" alt="">
                     <span>{{elem.text}}</span>
                 </div>
@@ -30,6 +27,43 @@
         name: 'ProjectSection',
         props: {
             cards: Array,
+        },
+
+        data(){
+            return{
+                projectsList: [
+                    'all',
+                    'institutional',
+                    'social',
+                    'events',
+                    'innovation',
+                    'environment',
+                    'technology'
+                ],
+
+                activeFilter: 'all',
+                filteredArray:  [],
+            }
+        },
+
+        mounted(){
+            this.filterCards(this.activeFilter)
+        },
+
+        methods: {
+            filterCards(elem){
+                this.filteredArray = [];
+                this.activeFilter = elem;
+                if(this.activeFilter == 'all'){
+                    this.filteredArray = this.cards;
+                }else{
+                    this.cards.forEach(card =>{
+                        if(card.category == elem){
+                            this.filteredArray.push(card)
+                        }
+                    })
+                }        
+            }
         }
     }
 </script>
@@ -71,11 +105,6 @@
                 gap: 40px;
                 font-size: 0.9rem;
                 padding-top: 20px;
-                
-                li:first-child{
-                        font-weight: 600;
-                        background-color: #0E272D;
-                    }
 
                 li{
                     list-style: none;
@@ -92,9 +121,25 @@
             .card-box{
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
                 gap: 30px;
                 margin-top: 50px;
+                justify-content: center;
+
+                .alert-box{
+                    width: calc(100% / 3 - 20px);
+                    aspect-ratio: 1/1;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    span{
+                        color: white;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        padding: 20px;
+                    }
+                }
 
                 .card{
                     width: calc(100% / 3 - 20px);
@@ -142,6 +187,11 @@
                 }
             }
         }  
+    }
+
+    .active{
+        font-weight: 600;
+        background-color: #0E272D;
     }
 
 </style>

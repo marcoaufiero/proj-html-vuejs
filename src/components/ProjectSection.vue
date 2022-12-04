@@ -81,6 +81,11 @@
                     list-style: none;
                     padding: 7px 5px;
                     border-radius: 5px;
+
+                    &:hover{
+                        scale: 1.1;
+                        cursor: pointer;
+                    }
                 }
             }
 
@@ -99,6 +104,18 @@
                     display: flex;
                     justify-content: center;
                     align-items: flex-end;
+                    overflow: hidden;
+
+                    &:hover{
+                        scale: 1.1;
+                        transition: 0.5s;
+                        cursor: pointer;
+
+                        img{
+                            scale: 1.3;
+                            transition: 2s;
+                        }
+                    }
                     
                     img{
                         position: absolute;

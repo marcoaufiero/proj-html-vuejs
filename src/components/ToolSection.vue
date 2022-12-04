@@ -52,6 +52,7 @@
     section{
         
         background-color: #EEF4ED;
+        padding: 100px 0 150px 0;
         
         .container{
             width: 60%;
@@ -65,7 +66,6 @@
                 padding: 40px;
                 background-color: white;
                 border-radius: 10px;
-                margin: 100px 0;
 
                 .img-box{
                     width: 50px;

@@ -18,8 +18,8 @@
                         <input type="tel" placeholder="Phone">
                         <select name="" id="">
                             <option value="default">More info</option>
-                            <option value=""></option>
-                            <option value=""></option>
+                            <option value="1">Option 1</option>
+                            <option value="1">Option 2</option>
                         </select>
                         <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                         <button>SEND</button>
@@ -55,7 +55,7 @@
                             <span>Main Avenue, 987</span>
                         </div>
                     </div>
-                    <div class="btn">VIEW MAP</div>
+                    <a href="#"><div class="btn">VIEW MAP</div></a>
                 </div>
             </div>
         </div>
@@ -150,6 +150,11 @@
                         background-color: #058283;
                         border-radius: 3px;
                         padding: 10px 15px;
+
+                        &:hover{
+                            background-color: #099595;
+                            cursor: pointer;
+                        }
                     }
                 }  
             }
@@ -201,6 +206,11 @@
                     color: white;
                     border-radius: 3px;
                     display: inline-block;
+
+                    &:hover{
+                        background-color: #099595;
+                        transition: 0.3s;
+                    }
                 }
             }
         

@@ -32,14 +32,14 @@
             <div class="container-60">
                 
                 <nav>
-                    <div>
+                    <a href="#">
                         <span class="title-1">N E X</span>
                         <span class="title-2">G E N</span>
-                    </div>
+                    </a>
                     <ul>
                         <li v-for="(elem, index) in info" :key="index"><a :href="elem.href">{{elem.name}}</a></li>
                         <li><a href="#"><font-awesome-icon icon="fa-regular fa-user" /></a></li>
-                        <li class="btn nav-btn"><a href="#">GET IN TOUCH</a></li>
+                        <a href="#"><li class="btn nav-btn">GET IN TOUCH</li></a>
                     </ul>
                 </nav>
             
@@ -112,7 +112,7 @@
             right: 0px;
             bottom: 0px;
             left: 0px;
-            z-index: -2;
+            z-index: -1;
         }
 
         nav{
@@ -121,7 +121,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            
             .title-1{
                 font-size: 1.3rem;
                 font-weight: 600;
@@ -147,18 +147,26 @@
                 .nav-btn{
                     background-color: #058283;
                 }
-            
+
+                >li:hover{
+                    box-shadow: 0 2px 0 white;
+                }
 
                 li{
                     margin-left: 30px;
                     list-style: none;
                     font-weight: 600;
-
-                    a{
-                        text-decoration: none;
-                        color: inherit;
-                    }
                 }
+
+                .nav-btn:hover{
+                    background-color: #078f8f;
+                }
+
+            }
+
+            a{
+                text-decoration: none;
+                color: inherit;
             }
         }
 
@@ -189,12 +197,22 @@
                     background-color: #058283;
                     margin-right: 20px;
                     font-size: 0.9rem;
+
+                    &:hover{
+                        background-color: #078f8f;
+                    }
                 }
 
                 .intro-btn-2{
                     border: 2px solid #058283;
                     font-size: 0.9rem;
+
+                    &:hover{
+                        background-color: #078f8f;
+                    }
                 }
+
+                
             }  
         }
     }

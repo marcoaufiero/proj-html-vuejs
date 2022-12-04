@@ -81,23 +81,23 @@
 
         .dots-img-1{
             position: absolute;
-            top: -40px;
+            top: -30px;
             left: 50%;
             display: flex;
             flex-wrap: wrap;
-            width: 180px;
-            height: 80px;
+            width: 140px;
+            height: 60px;
             transform: translateX(-50%);
         }
 
         .dots-img-2{
             position: absolute;
-            bottom: -40px;
+            bottom: -30px;
             left: 50%;
             display: flex;
             flex-wrap: wrap;
-            width: 180px;
-            height: 80px;
+            width: 140px;
+            height: 60px;
             transform: translateX(-50%);
         }
 
@@ -190,12 +190,24 @@
                             margin-right: 20px;
                             font-size: 0.9rem;
                             color: white;
+                            border: 2px solid white;
+
+                            &:hover{
+                                background-color: #079595;
+                                transition: 0.3s;
+                            }
                         }
 
                         .btn-2{
                             border: 2px solid #058283;
                             font-size: 0.9rem;
                             color: #058283;
+
+                            &:hover{
+                                background-color: #079595;
+                                color: white;
+                                transition: 0.3s;
+                            }
                         }
 
                     }

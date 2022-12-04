@@ -1,5 +1,15 @@
 <template>
     <section>
+        <div class="dots-img-1">
+            <div class="dot-box" v-for="(elem, index) in 36" :key="index">
+                <div class="dot"></div>
+            </div> 
+        </div>
+        <div class="dots-img-2">
+            <div class="dot-box" v-for="(elem, index) in 36" :key="index">
+                <div class="dot"></div>
+            </div>
+        </div>
         <div class="network-container">
             <div class="network-box">
                 <h5>ABOUT THE NETWORK</h5>
@@ -48,9 +58,7 @@
                 <div class="btn-box">
                     <a href="#"><div class="btn btn-1">GET IN TOUCH</div></a>
                     <a href="#"><div class="btn btn-2">READ MORE</div></a>
-                </div>
-                
-                
+                </div> 
             </div>
         </div>
         <div class="img-box">
@@ -69,6 +77,45 @@
     
     section{
         display: flex;
+        position: relative;
+
+        .dots-img-1{
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            width: 180px;
+            height: 80px;
+            transform: translateX(-50%);
+        }
+
+        .dots-img-2{
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            width: 180px;
+            height: 80px;
+            transform: translateX(-50%);
+        }
+
+        .dot-box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: calc(100% / 9);
+                height: calc(100% / 4);
+
+                .dot{
+                    width: 40%;
+                    aspect-ratio: 1/1;
+                    border-radius: 50%;
+                    background-color: #00A6A6;
+                    opacity: 0.3;
+                }
+        }
 
         .network-container{
             width: 50%;

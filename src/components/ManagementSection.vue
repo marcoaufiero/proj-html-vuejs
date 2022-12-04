@@ -114,7 +114,7 @@ section{
         top: -20px;
 
         .box{
-            width: calc(( 100% / 5 ) - 40px);
+            width: calc( 100% / 5 );
             height: 200px;
             justify-content: flex-start;
             display: flex;

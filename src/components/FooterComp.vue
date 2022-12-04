@@ -60,8 +60,15 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="container">
-
+            <div class="container-2">
+                <div>
+                    <span>Made by Marco Aufiero</span>
+                </div>
+                <div>
+                    <font-awesome-icon icon="fa-regular fa-copyright" />
+                    <span> NEXGEN is Proudly Powered by</span>
+                    <span class="blue-text"> Codings</span>
+                </div>
             </div>
         </div>
     </footer>
@@ -205,6 +212,20 @@
 
         .container-2{
             width: 60%;
+            margin-inline: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0;
+            
+            span, .fa-copyright{
+                color: white;
+            }
+
+            .blue-text{
+                color: #058283;
+            }
+
+            
         }
     }
 
